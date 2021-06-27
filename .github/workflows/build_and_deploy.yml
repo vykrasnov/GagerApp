@@ -19,9 +19,9 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore Dependencies
-      run: dotnet restore ./GagerApp.Manager/GagerApp.Manager/GagerApp.Manager.Wasm/GagerApp.manager.Wasm.csproj
+      run: dotnet restore ./GagerApp.Manager/GagerApp.Manager/GagerApp.Manager.Wasm/GagerApp.Manager.Wasm.csproj
     - name: Build 
-      run: dotnet build ./GagerApp.Manager/GagerApp.Manager/GagerApp.Manager.Wasm/GagerApp.manager.Wasm.csproj --no-restore -f $framework -c $config
+      run: dotnet build ./GagerApp.Manager/GagerApp.Manager/GagerApp.Manager.Wasm/GagerApp.Manager.Wasm.csproj --no-restore -f $framework -c $config
     - name: Publish Artifacts
       uses: actions/upload-artifact@v1.0.0
       if: github.event_name == 'workflow_dispatch' # Only deploy if Workflow manually ran

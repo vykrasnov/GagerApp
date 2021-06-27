@@ -1,0 +1,622 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:Windows10version1809="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 7)"
+    xmlns:BelowWindows10version1809="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractNotPresent(Windows.Foundation.UniversalApiContract, 7)"
+    xmlns:wasm="http://uno.ui/wasm"
+    xmlns:win="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="wasm"
+    >
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            <ResourceDictionary.MergedDictionaries>
+                <Windows10version1809:ColorPaletteResources Accent="#FFE74530" AltHigh="#FF000000" AltLow="#FF000000" AltMedium="#FF000000" AltMediumHigh="#FF000000" AltMediumLow="#FF000000" BaseHigh="#FFFFFFFF" BaseLow="#FF4F4541" BaseMedium="#FFB1A09B" BaseMediumHigh="#FFCAB7B2" BaseMediumLow="#FF80736E" ChromeAltLow="#FFCAB7B2" ChromeBlackHigh="#FF000000" ChromeBlackLow="#FFCAB7B2" ChromeBlackMedium="#FF000000" ChromeBlackMediumLow="#FF000000" ChromeDisabledHigh="#FF4F4541" ChromeDisabledLow="#FFB1A09B" ChromeGray="#FF998985" ChromeHigh="#FF998985" ChromeLow="#FF33150D" ChromeMedium="#FF3A211A" ChromeMediumLow="#FF483934" ChromeWhite="#FFFFFFFF" ListLow="#FF3A211A" ListMedium="#FF4F4541" />
+                <ResourceDictionary>
+                    <wasm:Color x:Key="SystemAccentColor">#FFE74530</wasm:Color>
+                    <wasm:Color x:Key="SystemAltHighColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemAltLowColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemAltMediumColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemAltMediumHighColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemAltMediumLowColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseHighColor">#FFFFFFFF</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseLowColor">#FF4F4541</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseMediumColor">#FFB1A09B</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseMediumHighColor">#FFCAB7B2</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseMediumLowColor">#FF80736E</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeAltLowColor">#FFCAB7B2</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeBlackHighColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeBlackLowColor">#FFCAB7B2</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeBlackMediumColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeBlackMediumLowColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeDisabledHighColor">#FF4F4541</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeDisabledLowColor">#FFB1A09B</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeGrayColor">#FF998985</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeHighColor">#FF998985</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeLowColor">#FF33150D</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeMediumColor">#FF3A211A</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeMediumLowColor">#FF483934</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeWhiteColor">#FFFFFFFF</wasm:Color>
+                    <wasm:Color x:Key="SystemListLowColor">#FF3A211A</wasm:Color>
+                    <wasm:Color x:Key="SystemListMediumColor">#FF4F4541</wasm:Color>
+
+                    <BelowWindows10version1809:Color x:Key="SystemAccentColor">#FFE74530</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltHighColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltLowColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltMediumColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltMediumHighColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltMediumLowColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseHighColor">#FFFFFFFF</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseLowColor">#FF4F4541</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseMediumColor">#FFB1A09B</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseMediumHighColor">#FFCAB7B2</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseMediumLowColor">#FF80736E</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeAltLowColor">#FFCAB7B2</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeBlackHighColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeBlackLowColor">#FFCAB7B2</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeBlackMediumColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeBlackMediumLowColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeDisabledHighColor">#FF4F4541</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeDisabledLowColor">#FFB1A09B</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeGrayColor">#FF998985</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeHighColor">#FF998985</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeLowColor">#FF33150D</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeMediumColor">#FF3A211A</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeMediumLowColor">#FF483934</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeWhiteColor">#FFFFFFFF</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemListLowColor">#FF3A211A</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemListMediumColor">#FF4F4541</BelowWindows10version1809:Color>
+                    <Color x:Key="SystemChromeAltMediumHighColor">#CC000000</Color>
+                    <Color x:Key="SystemChromeAltHighColor">#FF4F4541</Color>
+                    <Color x:Key="SystemRevealListLowColor">#FF3A211A</Color>
+                    <Color x:Key="SystemRevealListMediumColor">#FF4F4541</Color>
+                    <AcrylicBrush x:Key="SystemControlAcrylicWindowBrush" BackgroundSource="HostBackdrop" TintColor="{ThemeResource SystemChromeAltHighColor}" TintOpacity="0.8" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+                    <!-- Override system shape defaults -->
+                    <CornerRadius x:Key="ControlCornerRadius">2,2,2,2</CornerRadius>
+                    <CornerRadius x:Key="OverlayCornerRadius">4,4,4,4</CornerRadius>
+                    <!-- Override system borders -->
+                    <Thickness x:Key="MenuBarItemBorderThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="GridViewItemMultiselectBorderThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="CheckBoxBorderThemeThickness">1</Thickness>
+                    <x:Double x:Key="GridViewItemSelectedBorderThemeThickness">1</x:Double>
+                    <x:Double x:Key="RadioButtonBorderThemeThickness">1</x:Double>
+                    <Thickness x:Key="ButtonBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="CalendarDatePickerBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="TimePickerBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="DatePickerBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ToggleSwitchOuterBorderStrokeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="RepeatButtonBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="SearchBoxBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ToggleButtonBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="TextControlBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="RepeatButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ToggleButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="AppBarEllipsisButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="AppBarButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="AppBarToggleButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ListViewItemRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="GridViewItemRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ComboBoxItemRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <x:Double x:Key="PersonPictureEllipseBadgeStrokeThickness">1</x:Double>
+                    <!-- Override system generated accent colors -->
+                    <Color x:Key="SystemAccentColorDark1">#FFEC5C49</Color>
+                    <Color x:Key="SystemAccentColorDark2">#FFF17262</Color>
+                    <Color x:Key="SystemAccentColorDark3">#FFF5897A</Color>
+                    <Color x:Key="SystemAccentColorLight1">#FFD23726</Color>
+                    <Color x:Key="SystemAccentColorLight2">#FFBD291D</Color>
+                    <Color x:Key="SystemAccentColorLight3">#FFA91C13</Color>
+                    <Color x:Key="RegionColor">#FF000000</Color>
+                    <SolidColorBrush x:Key="RegionBrush" Color="{StaticResource RegionColor}" />
+
+                    <AcrylicBrush x:Key="NavigationViewDefaultPaneBackground"
+                                   BackgroundSource="Backdrop"
+                                   TintColor="{StaticResource SystemChromeMediumColor}"
+                                   TintOpacity=".6"/>
+                    <AcrylicBrush x:Key="NavigationViewTopPaneBackground"
+                                   BackgroundSource="Backdrop"
+                                   TintColor="{StaticResource SystemChromeMediumColor}"
+                                   TintOpacity=".6"/>
+                    <wasm:SolidColorBrush x:Key="SystemControlBackgroundChromeMediumBrush" Color="{StaticResource SystemChromeMediumColor}" />
+                    <wasm:SolidColorBrush x:Key="SystemControlBackgroundListLowBrush" Color="{StaticResource SystemListLowColor}" />
+                    <wasm:SolidColorBrush x:Key="SystemControlHyperlinkTextBrush" Color="{ThemeResource SystemAccentColor}" />
+
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Light">
+            <ResourceDictionary.MergedDictionaries>
+                <Windows10version1809:ColorPaletteResources Accent="#FFE74530" AltHigh="#FFFFFFFF" AltLow="#FFFFFFFF" AltMedium="#FFFFFFFF" AltMediumHigh="#FFFFFFFF" AltMediumLow="#FFFFFFFF" BaseHigh="#FF000000" BaseLow="#FF4F4541" BaseMedium="#FF3A211A" BaseMediumHigh="#FF2C0900" BaseMediumLow="#FF33150D" ChromeAltLow="#FF2C0900" ChromeBlackHigh="#FF000000" ChromeBlackLow="#FF4F4541" ChromeBlackMedium="#FF2C0900" ChromeBlackMediumLow="#FF3A211A" ChromeDisabledHigh="#FF4F4541" ChromeDisabledLow="#FF3A211A" ChromeGray="#FF33150D" ChromeHigh="#FF4F4541" ChromeLow="#FFCAB7B2" ChromeMedium="#FFB1A09B" ChromeMediumLow="#FFCAB7B2" ChromeWhite="#FFFFFFFF" ListLow="#FFB1A09B" ListMedium="#FF4F4541" />
+                <ResourceDictionary>
+                    <wasm:Color x:Key="SystemAccentColor">#FFE74530</wasm:Color>
+                    <wasm:Color x:Key="SystemAltHighColor">#FFFFFFFF</wasm:Color>
+                    <wasm:Color x:Key="SystemAltLowColor">#FFFFFFFF</wasm:Color>
+                    <wasm:Color x:Key="SystemAltMediumColor">#FFFFFFFF</wasm:Color>
+                    <wasm:Color x:Key="SystemAltMediumHighColor">#FFFFFFFF</wasm:Color>
+                    <wasm:Color x:Key="SystemAltMediumLowColor">#FFFFFFFF</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseHighColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseLowColor">#FF4F4541</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseMediumColor">#FF3A211A</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseMediumHighColor">#FF2C0900</wasm:Color>
+                    <wasm:Color x:Key="SystemBaseMediumLowColor">#FF33150D</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeAltLowColor">#FF2C0900</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeBlackHighColor">#FF000000</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeBlackLowColor">#FF4F4541</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeBlackMediumColor">#FF2C0900</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeBlackMediumLowColor">#FF3A211A</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeDisabledHighColor">#FF4F4541</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeDisabledLowColor">#FF3A211A</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeGrayColor">#FF33150D</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeHighColor">#FF4F4541</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeLowColor">#FFCAB7B2</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeMediumColor">#FFB1A09B</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeMediumLowColor">#FFCAB7B2</wasm:Color>
+                    <wasm:Color x:Key="SystemChromeWhiteColor">#FFFFFFFF</wasm:Color>
+                    <wasm:Color x:Key="SystemListLowColor">#FFB1A09B</wasm:Color>
+                    <wasm:Color x:Key="SystemListMediumColor">#FF4F4541</wasm:Color>
+
+                    <BelowWindows10version1809:Color x:Key="SystemAccentColor">#FFE74530</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltHighColor">#FFFFFFFF</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltLowColor">#FFFFFFFF</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltMediumColor">#FFFFFFFF</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltMediumHighColor">#FFFFFFFF</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemAltMediumLowColor">#FFFFFFFF</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseHighColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseLowColor">#FF4F4541</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseMediumColor">#FF3A211A</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseMediumHighColor">#FF2C0900</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemBaseMediumLowColor">#FF33150D</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeAltLowColor">#FF2C0900</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeBlackHighColor">#FF000000</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeBlackLowColor">#FF4F4541</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeBlackMediumColor">#FF2C0900</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeBlackMediumLowColor">#FF3A211A</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeDisabledHighColor">#FF4F4541</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeDisabledLowColor">#FF3A211A</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeGrayColor">#FF33150D</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeHighColor">#FF4F4541</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeLowColor">#FFCAB7B2</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeMediumColor">#FFB1A09B</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeMediumLowColor">#FFCAB7B2</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemChromeWhiteColor">#FFFFFFFF</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemListLowColor">#FFB1A09B</BelowWindows10version1809:Color>
+                    <BelowWindows10version1809:Color x:Key="SystemListMediumColor">#FF4F4541</BelowWindows10version1809:Color>
+                    <Color x:Key="SystemChromeAltMediumHighColor">#CCFFFFFF</Color>
+                    <Color x:Key="SystemChromeAltHighColor">#FF4F4541</Color>
+                    <Color x:Key="SystemRevealListLowColor">#FFB1A09B</Color>
+                    <Color x:Key="SystemRevealListMediumColor">#FF4F4541</Color>
+                    <AcrylicBrush x:Key="SystemControlAcrylicWindowBrush" BackgroundSource="HostBackdrop" TintColor="{ThemeResource SystemChromeAltHighColor}" TintOpacity="0.8" FallbackColor="{ThemeResource SystemChromeMediumColor}" />
+                    <!-- Override system shape defaults -->
+                    <CornerRadius x:Key="ControlCornerRadius">2,2,2,2</CornerRadius>
+                    <CornerRadius x:Key="OverlayCornerRadius">4,4,4,4</CornerRadius>
+                    <!-- Override system borders -->
+                    <Thickness x:Key="MenuBarItemBorderThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="GridViewItemMultiselectBorderThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="CheckBoxBorderThemeThickness">1</Thickness>
+                    <x:Double x:Key="GridViewItemSelectedBorderThemeThickness">1</x:Double>
+                    <x:Double x:Key="RadioButtonBorderThemeThickness">1</x:Double>
+                    <Thickness x:Key="ButtonBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="CalendarDatePickerBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="TimePickerBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="DatePickerBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ToggleSwitchOuterBorderStrokeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="RepeatButtonBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="SearchBoxBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ToggleButtonBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="TextControlBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="RepeatButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ToggleButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="AppBarEllipsisButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="AppBarButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="AppBarToggleButtonRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ListViewItemRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="GridViewItemRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <Thickness x:Key="ComboBoxItemRevealBorderThemeThickness">1,1,1,1</Thickness>
+                    <x:Double x:Key="PersonPictureEllipseBadgeStrokeThickness">1</x:Double>
+                    <!-- Override system generated accent colors -->
+                    <Color x:Key="SystemAccentColorLight1">#FFEC5C49</Color>
+                    <Color x:Key="SystemAccentColorLight2">#FFF17262</Color>
+                    <Color x:Key="SystemAccentColorLight3">#FFF5897A</Color>
+                    <Color x:Key="SystemAccentColorDark1">#FFD23726</Color>
+                    <Color x:Key="SystemAccentColorDark2">#FFBD291D</Color>
+                    <Color x:Key="SystemAccentColorDark3">#FFA91C13</Color>
+                    <win:RevealBackgroundBrush x:Key="SystemControlHighlightListLowRevealBackgroundBrush" TargetTheme="Light" Color="{ThemeResource SystemRevealListMediumColor}" FallbackColor="{ StaticResource SystemListMediumColor}" />
+                    <Color x:Key="RegionColor">#FFFFFFFF</Color>
+                    <SolidColorBrush x:Key="RegionBrush" Color="{StaticResource RegionColor}" />
+
+                    <AcrylicBrush x:Key="NavigationViewDefaultPaneBackground"
+                                   BackgroundSource="Backdrop"
+                                   TintColor="{StaticResource SystemChromeMediumColor}"
+                                   TintOpacity=".6"/>
+                    <AcrylicBrush x:Key="NavigationViewTopPaneBackground"
+                                   BackgroundSource="Backdrop"
+                                   TintColor="{StaticResource SystemChromeMediumColor}"
+                                   TintOpacity=".6"/>
+                    <wasm:SolidColorBrush x:Key="SystemControlBackgroundChromeMediumBrush" Color="{StaticResource SystemChromeMediumColor}" />
+                    <wasm:SolidColorBrush x:Key="SystemControlBackgroundListLowBrush" Color="{StaticResource SystemListLowColor}" />
+                    <wasm:SolidColorBrush x:Key="SystemControlHyperlinkTextBrush" Color="{ThemeResource SystemAccentColor}" />
+
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="HighContrast">
+            <StaticResource x:Key="RegionColor" ResourceKey="SystemColorWindowColor" />
+            <SolidColorBrush x:Key="RegionBrush" Color="{StaticResource RegionColor}" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+    <Color x:Key="ColorPrimary">#4f4541</Color>
+    <Color x:Key="ColorSecondary">#fdec07</Color>
+    <Color x:Key="ColorAccent">#e74530</Color>
+
+    <Style x:Key="CommandBarCustomStyle" TargetType="CommandBar">
+        <Setter Property="Background" Value="{ThemeResource CommandBarBackground}" />
+        <Setter Property="Foreground" Value="{ThemeResource CommandBarForeground}" />
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Top" />
+        <Setter Property="ClosedDisplayMode" Value="Compact" />
+        <Setter Property="ExitDisplayModeOnAccessKeyInvoked" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="CommandBar">
+                    <Grid x:Name="LayoutRoot">
+
+                        <Grid.Resources>
+                            <Storyboard x:Key="OverlayOpeningAnimation">
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity">
+                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0" Value="0" />
+                                    <SplineDoubleKeyFrame KeyTime="0:0:0.467" KeySpline="0.1,0.9 0.2,1.0" Value="1" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                            <Storyboard x:Key="OverlayClosingAnimation">
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity">
+                                    <DiscreteDoubleKeyFrame KeyTime="0:0:0" Value="1" />
+                                    <SplineDoubleKeyFrame KeyTime="0:0:0.167" KeySpline="0.2,0 0,1" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </Grid.Resources>
+
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+                                <VisualState x:Name="Disabled"/>
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="AvailableCommandsStates">
+                                <VisualState x:Name="BothCommands" />
+                                <VisualState x:Name="PrimaryCommandsOnly">
+                                </VisualState>
+                                <VisualState x:Name="SecondaryCommandsOnly">
+
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PrimaryItemsControl" Storyboard.TargetProperty="Visibility">
+                                            <DiscreteObjectKeyFrame KeyTime="0:0:0" Value="Collapsed" />
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="DynamicOverflowStates">
+                                <VisualState x:Name="DynamicOverflowDisabled" />
+                                <VisualState x:Name="DynamicOverflowEnabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentControlColumnDefinition.Width" Value="Auto" />
+                                        <Setter Target="PrimaryItemsControlColumnDefinition.Width" Value="*" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                            </VisualStateGroup>
+
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid x:Name="ContentRoot"
+                          VerticalAlignment="Top"
+                          Margin="{TemplateBinding Padding}"
+                          Height="{TemplateBinding Height}"
+                          MinHeight="{ThemeResource AppBarThemeCompactHeight}"
+                          Background="{TemplateBinding Background}"
+                          XYFocusKeyboardNavigation="Enabled">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Grid>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition x:Name="ContentControlColumnDefinition" Width="*" />
+                                    <ColumnDefinition x:Name="PrimaryItemsControlColumnDefinition" Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <!-- Use a ContentControl rather than a ContentPresenter so that IsEnabled can be set to false
+                                     in the Minimal/HiddenClosed states to remove it from being a tab-stop candidate. -->
+                                <ContentControl x:Name="ContentControl"
+                              Content="{TemplateBinding Content}"
+                              ContentTemplate="{TemplateBinding ContentTemplate}"
+                              ContentTransitions="{TemplateBinding ContentTransitions}"
+                              Foreground="{TemplateBinding Foreground}"
+                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                              HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                              VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                              IsTabStop="False" />
+                                <ItemsControl x:Name="PrimaryItemsControl"
+                              HorizontalAlignment="Right"
+                              MinHeight="{ThemeResource AppBarThemeCompactHeight}"
+                              IsTabStop="False"
+                              Grid.Column="1">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <StackPanel Orientation="Horizontal" />
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                </ItemsControl>
+                            </Grid>
+                            <Rectangle x:Name="HighContrastBorder"
+                            x:DeferLoadStrategy="Lazy"
+                            Grid.ColumnSpan="2"
+                            Visibility="Collapsed"
+                            VerticalAlignment="Stretch"
+                            Stroke="{ThemeResource CommandBarHighContrastBorder}"
+                            StrokeThickness="1" />
+
+                        </Grid>
+
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="AppBarButton" x:Key="AppBarButtonCustomStyle">
+        <Setter Property="Background" Value="{ThemeResource AppBarButtonRevealBackground}" />
+        <Setter Property="Foreground" Value="{ThemeResource AppBarButtonForeground}" />
+        <Setter Property="BorderBrush" Value="{ThemeResource AppBarButtonRevealBorderBrush}" />
+        <Setter Property="BorderThickness" Value="{ThemeResource AppBarButtonRevealBorderThemeThickness}" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
+        <Setter Property="VerticalAlignment" Value="Top" />
+        <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="Width" Value="Auto" />
+        <Setter Property="UseSystemFocusVisuals" Value="{StaticResource UseSystemFocusVisuals}" />
+        <Setter Property="AllowFocusOnInteraction" Value="False" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="AppBarButton">
+                    <Grid
+                                x:Name="Root"
+                                MinWidth="{TemplateBinding MinWidth}"
+                                MaxWidth="{TemplateBinding MaxWidth}"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="{TemplateBinding CornerRadius}"
+                                Margin="1,0">
+
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="ApplicationViewStates">
+                                <VisualState x:Name="FullSize" />
+                                <VisualState x:Name="Overflow">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentRoot.MinHeight" Value="0" />
+                                        <Setter Target="ContentViewbox.Visibility" Value="Collapsed" />
+                                        <Setter Target="TextLabel.Visibility" Value="Collapsed" />
+                                        <Setter Target="OverflowTextLabel.Visibility" Value="Visible" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="OverflowWithToggleButtons">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentRoot.MinHeight" Value="0" />
+                                        <Setter Target="ContentViewbox.Visibility" Value="Collapsed" />
+                                        <Setter Target="TextLabel.Visibility" Value="Collapsed" />
+                                        <Setter Target="OverflowTextLabel.Visibility" Value="Visible" />
+                                        <Setter Target="OverflowTextLabel.Margin" Value="38,0,12,0" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="OverflowWithMenuIcons">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentRoot.MinHeight" Value="0" />
+                                        <Setter Target="ContentViewbox.HorizontalAlignment" Value="Left" />
+                                        <Setter Target="ContentViewbox.VerticalAlignment" Value="Center" />
+                                        <Setter Target="ContentViewbox.Width" Value="16" />
+                                        <Setter Target="ContentViewbox.Height" Value="16" />
+                                        <Setter Target="ContentViewbox.Margin" Value="12,0,12,0" />
+                                        <Setter Target="TextLabel.Visibility" Value="Collapsed" />
+                                        <Setter Target="OverflowTextLabel.Visibility" Value="Visible" />
+                                        <Setter Target="OverflowTextLabel.Margin" Value="38,0,12,0" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="OverflowWithToggleButtonsAndMenuIcons">
+                                    <VisualState.Setters>
+                                        <Setter Target="ContentRoot.MinHeight" Value="0" />
+                                        <Setter Target="ContentViewbox.HorizontalAlignment" Value="Left" />
+                                        <Setter Target="ContentViewbox.VerticalAlignment" Value="Center" />
+                                        <Setter Target="ContentViewbox.Width" Value="16" />
+                                        <Setter Target="ContentViewbox.Height" Value="16" />
+                                        <Setter Target="ContentViewbox.Margin" Value="38,0,12,0" />
+                                        <Setter Target="TextLabel.Visibility" Value="Collapsed" />
+                                        <Setter Target="OverflowTextLabel.Visibility" Value="Visible" />
+                                        <Setter Target="OverflowTextLabel.Margin" Value="76,0,12,0" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal">
+
+                                    <Storyboard>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="OverflowTextLabel" />
+                                    </Storyboard>
+                                </VisualState>
+
+                                <VisualState x:Name="PointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="Root.(RevealBrush.State)" Value="PointerOver" />
+                                        <Setter Target="Root.Background" Value="{ThemeResource AppBarButtonRevealBackgroundPointerOver}" />
+                                        <Setter Target="Border.BorderBrush" Value="{ThemeResource AppBarButtonRevealBorderBrushPointerOver}" />
+                                        <Setter Target="Content.Foreground" Value="{ThemeResource AppBarButtonForegroundPointerOver}" />
+                                        <Setter Target="TextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundPointerOver}" />
+                                        <Setter Target="OverflowTextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundPointerOver}" />
+                                    </VisualState.Setters>
+
+                                    <Storyboard>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="OverflowTextLabel" />
+                                    </Storyboard>
+                                </VisualState>
+
+                                <VisualState x:Name="Pressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="Root.(RevealBrush.State)" Value="Pressed" />
+                                        <Setter Target="Root.Background" Value="{ThemeResource AppBarButtonRevealBackgroundPressed}" />
+                                        <Setter Target="Border.BorderBrush" Value="{ThemeResource AppBarButtonRevealBorderBrushPressed}" />
+                                        <Setter Target="Content.Foreground" Value="{ThemeResource AppBarButtonForegroundPressed}" />
+                                        <Setter Target="TextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundPressed}" />
+                                        <Setter Target="OverflowTextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundPressed}" />
+                                    </VisualState.Setters>
+
+                                    <Storyboard>
+                                        <PointerDownThemeAnimation Storyboard.TargetName="OverflowTextLabel" />
+                                    </Storyboard>
+                                </VisualState>
+
+                                <VisualState x:Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Target="Root.Background" Value="{ThemeResource AppBarButtonRevealBackgroundDisabled}" />
+                                        <Setter Target="Border.BorderBrush" Value="{ThemeResource AppBarButtonRevealBorderBrushDisabled}" />
+                                        <Setter Target="Content.Foreground" Value="{ThemeResource AppBarButtonForegroundDisabled}" />
+                                        <Setter Target="TextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundDisabled}" />
+                                        <Setter Target="OverflowTextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundDisabled}" />
+                                        <Setter Target="KeyboardAcceleratorTextLabel.Foreground" Value="{ThemeResource AppBarButtonKeyboardAcceleratorTextForegroundDisabled}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="OverflowNormal">
+
+                                    <Storyboard>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="ContentRoot" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="OverflowPointerOver">
+                                    <VisualState.Setters>
+                                        <Setter Target="Root.Background" Value="{ThemeResource AppBarButtonRevealBackgroundPointerOver}" />
+                                        <Setter Target="Border.BorderBrush" Value="{ThemeResource AppBarButtonRevealBorderBrushPointerOver}" />
+                                        <Setter Target="Content.Foreground" Value="{ThemeResource AppBarButtonForegroundPointerOver}" />
+                                        <Setter Target="TextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundPointerOver}" />
+                                        <Setter Target="OverflowTextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundPointerOver}" />
+                                        <Setter Target="KeyboardAcceleratorTextLabel.Foreground" Value="{ThemeResource AppBarButtonKeyboardAcceleratorTextForegroundPointerOver}" />
+                                    </VisualState.Setters>
+
+                                    <Storyboard>
+                                        <PointerUpThemeAnimation Storyboard.TargetName="ContentRoot" />
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="OverflowPressed">
+                                    <VisualState.Setters>
+                                        <Setter Target="Root.Background" Value="{ThemeResource AppBarButtonRevealBackgroundPressed}" />
+                                        <Setter Target="Border.BorderBrush" Value="{ThemeResource AppBarButtonRevealBorderBrushPressed}" />
+                                        <Setter Target="Content.Foreground" Value="{ThemeResource AppBarButtonForegroundPressed}" />
+                                        <Setter Target="TextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundPressed}" />
+                                        <Setter Target="OverflowTextLabel.Foreground" Value="{ThemeResource AppBarButtonForegroundPressed}" />
+                                        <Setter Target="KeyboardAcceleratorTextLabel.Foreground" Value="{ThemeResource AppBarButtonKeyboardAcceleratorTextForegroundPressed}" />
+                                    </VisualState.Setters>
+
+                                    <Storyboard>
+                                        <PointerDownThemeAnimation Storyboard.TargetName="ContentRoot" />
+                                    </Storyboard>
+                                </VisualState>
+
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="InputModeStates">
+                                <VisualState x:Name="InputModeDefault" />
+                                <VisualState x:Name="TouchInputMode">
+                                    <VisualState.Setters>
+                                        <Setter Target="OverflowTextLabel.Padding" Value="{ThemeResource AppBarButtonOverflowTextTouchMargin}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="GameControllerInputMode">
+                                    <VisualState.Setters>
+                                        <Setter Target="OverflowTextLabel.Padding" Value="{ThemeResource AppBarButtonOverflowTextTouchMargin}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                            </VisualStateGroup>
+                            <VisualStateGroup x:Name="KeyboardAcceleratorTextVisibility">
+                                <VisualState x:Name="KeyboardAcceleratorTextCollapsed" />
+                                <VisualState x:Name="KeyboardAcceleratorTextVisible">
+                                    <VisualState.Setters>
+                                        <Setter Target="KeyboardAcceleratorTextLabel.Visibility" Value="Visible" />
+                                    </VisualState.Setters>
+                                </VisualState>
+
+                            </VisualStateGroup>
+
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid x:Name="ContentRoot" MinHeight="{ThemeResource AppBarThemeMinHeight}" Margin="-1,0">
+
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Viewbox x:Name="ContentViewbox"
+                                             Height="{ThemeResource AppBarButtonContentHeight}"
+                                             HorizontalAlignment="Stretch"
+                                             AutomationProperties.AccessibilityView="Raw" >
+                                <ContentPresenter x:Name="Content"
+                                    Content="{TemplateBinding Icon}"
+                                    Foreground="{TemplateBinding Foreground}"/>
+                            </Viewbox>
+                            <TextBlock
+                                        x:Name="TextLabel"
+                                        Grid.Row="0"
+                                        Grid.Column="1"
+                                        Text="{TemplateBinding Label}"
+                                        Foreground="{TemplateBinding Foreground}"
+                                        FontSize="12"
+                                        FontFamily="{TemplateBinding FontFamily}"
+                                        TextAlignment="Left"
+                                        TextWrapping="Wrap"
+                                        Margin="{ThemeResource AppBarButtonTextLabelOnRightMargin}"
+                                        VerticalAlignment="Center"
+                                        AutomationProperties.AccessibilityView="Raw" />
+                            <TextBlock x:Name="OverflowTextLabel"
+                                               Text="{TemplateBinding Label}"
+                                               Foreground="{TemplateBinding Foreground}"
+                                               FontSize="15"
+                                               FontFamily="{TemplateBinding FontFamily}"
+                                               TextAlignment="Left"
+                                               TextTrimming="Clip"
+                                               TextWrapping="NoWrap"
+                                               HorizontalAlignment="Stretch"
+                                               VerticalAlignment="Center"
+                                               Margin="12,0,12,0"
+                                               Padding="{ThemeResource AppBarButtonOverflowTextLabelPadding}"
+                                               Visibility="Collapsed"
+                                               AutomationProperties.AccessibilityView="Raw" />
+                            <TextBlock x:Name="KeyboardAcceleratorTextLabel"
+                                               Grid.Column="1"
+                                               Style="{ThemeResource CaptionTextBlockStyle}"
+                                               Text="{TemplateBinding KeyboardAcceleratorTextOverride}"
+                                               MinWidth="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=TemplateSettings.KeyboardAcceleratorTextMinWidth}"
+                                               Margin="24,0,12,0"
+                                               Foreground="{ThemeResource AppBarButtonKeyboardAcceleratorTextForeground}"
+                                               HorizontalAlignment="Right"
+                                               VerticalAlignment="Center"
+                                               Visibility="Collapsed"
+                                               AutomationProperties.AccessibilityView="Raw" />
+                            <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="{TemplateBinding CornerRadius}" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="1,0" />
+
+                        </Grid>
+
+                    </Grid>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
+

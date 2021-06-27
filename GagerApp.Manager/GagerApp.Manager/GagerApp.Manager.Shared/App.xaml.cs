@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using GagerApp.Manager.Pages;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -95,7 +96,14 @@ namespace GagerApp.Manager
                     // When the navigation stack isn't restored navigate to the first page,
                     // configuring the new page by passing required information as a navigation
                     // parameter
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(
+                        typeof(LoginPage),
+                        new NavParams()
+                        {
+                            VMP = null,
+                            VMT = typeof(Core.ViewModel.Pages.LoginPageViewModel).AssemblyQualifiedName
+                        }
+                        );
                 }
                 // Ensure the current window is active
                 _window.Activate();

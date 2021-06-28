@@ -1,0 +1,7 @@
+Assets/SplashScreen.png
+Assets/Logo.png
+Assets/SplashScreen.scale-100.png
+Assets/SplashScreen.scale-125.png
+Assets/SplashScreen.scale-150.png
+Assets/SplashScreen.scale-200.png
+Assets/SplashScreen.scale-400.png

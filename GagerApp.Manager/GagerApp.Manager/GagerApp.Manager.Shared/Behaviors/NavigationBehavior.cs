@@ -55,7 +55,6 @@ namespace GagerApp.Manager.Behaviors
           
             else
             {
-                /*
                 Microsoft.UI.Xaml.Controls.NavigationViewItem item = args.SelectedItem as Microsoft.UI.Xaml.Controls.NavigationViewItem;
                 switch (item.Tag.ToString())
                 {
@@ -111,7 +110,6 @@ namespace GagerApp.Manager.Behaviors
                     default:
                         throw new NotImplementedException($"The Tag {item.Tag.ToString()} is not supported");
                 }
-                */
             }
 
         }
@@ -133,6 +131,13 @@ namespace GagerApp.Manager.Behaviors
 
         private void OnNavFrameChanged()
         {
+            NavFrame.Navigate(
+                typeof(MyDayPage), new NavParams()
+                {
+                    VMP = null,
+                    VMT = typeof(DummyMyDayPageViewModel).FullName
+                }
+                );
         }
 
         protected override void OnAttached()

@@ -15,11 +15,11 @@ using Windows.UI.Xaml.Navigation;
 
 namespace GagerApp.Manager.Pages
 {
-    public sealed partial class LoginPage : BasePage
+    public sealed partial class NewOrderDialog : BasePage
     {
-        public LoginPage()
+        public NewOrderDialog()
         {
-            this.InitializeComponent();
+            InitializeComponent();
         }
     }
 }

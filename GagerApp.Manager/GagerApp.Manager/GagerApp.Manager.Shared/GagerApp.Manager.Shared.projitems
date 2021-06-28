@@ -29,12 +29,64 @@
     <Compile Include="$(MSBuildThisFileDirectory)Converters\EmptyStringToCollapsedConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\OrderStatusToStringConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Converters\ValueWhenConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyCalculatePageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyDateDialogViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyMaterialValuesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyMonetaryResourceViewPageModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyMyDayPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyNewPaartnerDialogViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyOrderPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyPartnerPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummySelectPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Dummy\DummyWorkerPageVIewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BasePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CalculatePage.xaml.cs">
+      <DependentUpon>CalculatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DateDialog.xaml.cs">
+      <DependentUpon>DateDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\DialogPage.xaml.cs">
+      <DependentUpon>DialogPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MaterialValues.xaml.cs">
+      <DependentUpon>MaterialValues.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MonetaryResourcePage.xaml.cs">
+      <DependentUpon>MonetaryResourcePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MyDayPage.xaml.cs">
+      <DependentUpon>MyDayPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Pages\NavParams.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NewOrderDialog.xaml.cs">
+      <DependentUpon>NewOrderDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NewPartnerDialog.xaml.cs">
+      <DependentUpon>NewPartnerDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\NewTransactionDialog.xaml.cs">
+      <DependentUpon>NewTransactionDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\OrderPage.xaml.cs">
+      <DependentUpon>OrderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\PartnerPage.xaml.cs">
+      <DependentUpon>PartnerPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SelectPosition.xaml.cs">
+      <DependentUpon>SelectPosition.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\WorkerPage.xaml.cs">
+      <DependentUpon>WorkerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Services\DummyLoginService.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -42,7 +94,63 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\CalculatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\DateDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\DialogPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="$(MSBuildThisFileDirectory)Pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MaterialValues.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MonetaryResourcePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MyDayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\NewOrderDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\NewPartnerDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\NewTransactionDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\OrderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\PartnerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\SelectPosition.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\WorkerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

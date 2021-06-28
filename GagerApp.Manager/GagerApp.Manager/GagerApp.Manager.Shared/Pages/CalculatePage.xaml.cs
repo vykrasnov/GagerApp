@@ -15,11 +15,17 @@ using Windows.UI.Xaml.Navigation;
 
 namespace GagerApp.Manager.Pages
 {
-    public sealed partial class LoginPage : BasePage
+    public sealed partial class CalculatePage : Page
     {
-        public LoginPage()
+        public CalculatePage()
         {
-            this.InitializeComponent();
+            InitializeComponent();
+            Loaded += CalculatePage_Loaded;
+        }
+
+        private void CalculatePage_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Dummy.DummyCalculatePageViewModel();
         }
     }
 }

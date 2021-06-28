@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="GagerApp.Manager.Pages.DialogPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GagerApp.Manager.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:interactions="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:behaviors="using:GagerApp.Manager.Behaviors"
+    mc:Ignorable="d"
+    Background="#77000000"
+    >
+
+    <Grid
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch"
+        >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*" MinWidth="640"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <local:CalculatePage Grid.Column="1" Grid.Row="1"/>
+    </Grid>
+</Page>

@@ -1,0 +1,67 @@
+﻿<local:BasePage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GagerApp.Manager.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:behaviors="using:GagerApp.Manager.Behaviors"
+    x:Class="GagerApp.Manager.Pages.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <interactivity:Interaction.Behaviors>
+        <behaviors:NavigationBehavior
+            NavView="{x:Bind navView}"
+            NavFrame="{x:Bind ContentFrame}"
+            >
+        </behaviors:NavigationBehavior>
+    </interactivity:Interaction.Behaviors>
+    <Grid>
+        <controls:NavigationView
+            IsBackButtonVisible="Collapsed"
+            IsSettingsVisible="False"
+            x:Name="navView"
+            SelectedItem="{Binding ElementName=DefaultItem}"
+            >
+            <controls:NavigationView.MenuItems>
+                <controls:NavigationViewItem x:Name="DefaultItem" Icon="CalendarDay"  Tag="MyDayPage" Content="Мой день"/>
+                <controls:NavigationViewItem Icon="Document" Tag="OrdersPage" Content="Заявки"/>
+                <controls:NavigationViewItem Tag="MonetaryResource" Content="Денежные средства">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEC59;"/>
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+                <controls:NavigationViewItem Content="Персонал" Tag="Worker">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE125;"/>
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+                <controls:NavigationViewItem Content="Контрагенты" Tag="PartnerPage">
+                    <controls:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE779;"/>
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+                <controls:NavigationViewItem Icon="Shop" Tag="MaterialValues" Content="ТМЦ"/>
+            </controls:NavigationView.MenuItems>
+            <controls:NavigationView.FooterMenuItems>
+                <controls:NavigationViewItem
+                    Content="Пользователь тестовый 1"
+                    >
+                    <controls:NavigationViewItem.Icon>
+                        <SymbolIcon Symbol="Contact"/>
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+
+            </controls:NavigationView.FooterMenuItems>
+            <Frame
+                x:Name="ContentFrame"
+                IsTabStop="False"                
+                >
+            </Frame>
+
+        </controls:NavigationView>
+
+    </Grid>
+</local:BasePage>

@@ -15,9 +15,9 @@ using Windows.UI.Xaml.Navigation;
 
 namespace GagerApp.Manager.Pages
 {
-    public sealed partial class LoginPage : BasePage
+    public sealed partial class MaterialValues : BasePage
     {
-        public LoginPage()
+        public MaterialValues()
         {
             this.InitializeComponent();
         }

@@ -1,0 +1,259 @@
+﻿<local:BasePage
+    x:Class="GagerApp.Manager.Pages.NewPartnerDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GagerApp.Manager.Pages"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:interactions="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:behaviors="using:GagerApp.Manager.Behaviors"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    Background="#77000000"    
+    >
+
+    <Grid
+        >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="24"  Width="*"/>
+            <ColumnDefinition MinWidth="640" Width="2*" />
+            <ColumnDefinition MinWidth="24" Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid
+            Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+            Grid.Column="1"
+            Grid.Row="1"  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <CommandBar
+                Style="{StaticResource CommandBarCustomStyle}"
+                OverflowButtonVisibility="Collapsed"
+                DefaultLabelPosition="Right"
+                Grid.Row="0"
+                VerticalContentAlignment="Stretch"
+                HorizontalContentAlignment="Stretch"
+                >
+                <CommandBar.Content>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+
+                        <Button
+                        Style="{ThemeResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Stretch"
+                        Width="48">
+                            <interactivity:Interaction.Behaviors>
+                                <interactions:EventTriggerBehavior EventName="Click">
+                                    <behaviors:CloseDialogAction/>
+                                </interactions:EventTriggerBehavior>
+                            </interactivity:Interaction.Behaviors>
+                        </Button>
+
+                        <TextBlock
+                             FontSize="24"
+                            Grid.Column="1"
+                            Text="Новый контрагент"
+                            VerticalAlignment="Center"
+                            Margin="16,0,0,0"
+                        />
+                    </Grid>
+                </CommandBar.Content>
+
+                <AppBarButton Icon="Accept" Label="Готово" Style="{StaticResource AppBarButtonCustomStyle}">
+                    <interactivity:Interaction.Behaviors>
+                        <interactions:EventTriggerBehavior EventName="Click">
+                            <behaviors:CloseDialogAction/>
+                        </interactions:EventTriggerBehavior>
+                    </interactivity:Interaction.Behaviors>
+                </AppBarButton>
+            </CommandBar>
+            <StackPanel
+                Grid.Row="1"
+                Orientation="Vertical"
+                Margin="16,8"
+                >
+                <Pivot
+                    VerticalAlignment="Top"
+                    >
+                    <PivotItem
+                        Header="Физическое лицо"
+                        Margin="0"
+                        >
+                        <StackPanel
+                            Orientation="Vertical"
+                            Spacing="8"
+                            Margin="0,8,0,0"
+                            >
+                            <TextBox
+                                Grid.Row="4"
+                                Height="40"
+                                MinWidth="150"
+                                HorizontalAlignment="Stretch"
+                                Text=""
+                                PlaceholderText="Фамилия"
+                                />
+                            <TextBox
+                                Height="40"
+                                MinWidth="150"
+                                HorizontalAlignment="Stretch"
+                                Text=""
+                                PlaceholderText="Имя"
+                                />
+                            <TextBox
+                                Height="40"
+                                MinWidth="150"
+                                HorizontalAlignment="Stretch"
+                                Text=""
+                                PlaceholderText="Отчество"
+                                />
+                            <controls:DataGrid
+                                HorizontalAlignment="Stretch"
+                                HeadersVisibility="Column"
+                                ColumnHeaderHeight="40"
+                                RowHeight="40"
+                                CanUserReorderColumns="False"
+                                AutoGenerateColumns="False"
+                                ItemsSource="{Binding GagerTelefons, Mode=OneWay}">
+                                <interactivity:Interaction.Behaviors>
+                                    <interactions:EventTriggerBehavior>
+                                        <interactions:NavigateToPageAction>
+                                            <interactions:NavigateToPageAction.Parameter>
+                                                <local:NavParams VMT="GagerApp.Manager.Dummy.DummyNewPaartnerDialogViewModel" VMP="{x:Null}"/>
+                                            </interactions:NavigateToPageAction.Parameter>
+                                        </interactions:NavigateToPageAction>
+                                    </interactions:EventTriggerBehavior>
+                                </interactivity:Interaction.Behaviors>
+                                <controls:DataGrid.Columns>
+                                    <controls:DataGridTextColumn Header="Телефон" MinWidth="150" Binding="{Binding Path=Telefon, Mode=OneWay}"/>
+                                    <controls:DataGridTemplateColumn CanUserResize="False" Width="40" IsReadOnly="True">
+                                        <controls:DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Style="{ThemeResource TextBlockButtonStyle}">
+                                                    <FontIcon FontSize="20" Glyph="&#xE106;" />
+                                                </Button>
+                                            </DataTemplate>
+                                        </controls:DataGridTemplateColumn.CellTemplate>
+                                    </controls:DataGridTemplateColumn>
+                                </controls:DataGrid.Columns>
+                            </controls:DataGrid>
+                            <Button
+                                Style="{ThemeResource TextBlockButtonStyle}"
+                                HorizontalContentAlignment="Stretch"
+                                >
+                                <StackPanel
+                                    Orientation="Horizontal"
+                                    Spacing="8"
+                                    >
+                                    <FontIcon FontSize="20" Glyph="&#xE109;" />
+                                    <TextBlock Text="Добавить"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </PivotItem>
+                    <PivotItem
+                        Header="Юридическое лицо"
+                        Margin="0"
+                        >
+                        <StackPanel
+                            Orientation="Vertical"
+                            Spacing="8"
+                            Margin="0,8,0,0"
+                            >
+                            <Grid
+                                >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox
+                                    Margin="0,0,4,0"
+                                    Height="40"
+                                    HorizontalAlignment="Stretch"
+                                    Text=""
+                                    PlaceholderText="Наименование "
+                                    />
+                                <TextBox
+                                    Grid.Column="1"
+                                    Margin="4,0,0,0"
+                                    Height="40"
+                                    HorizontalAlignment="Stretch"
+                                    PlaceholderText="ИНН"
+                                    />
+                                <TextBox
+                                    Grid.Row="1"
+                                    Grid.ColumnSpan="2"
+                                    Margin="0,4,0,0"
+                                    Height="40"
+                                    HorizontalAlignment="Stretch"
+                                    Text=""
+                                    PlaceholderText="Полное наименование "
+                                    />
+                            </Grid>
+                            <TextBlock
+                                HorizontalAlignment="Stretch"
+                                Text="Контактные лица"/>
+                            <controls:DataGrid
+                                HorizontalAlignment="Stretch"
+                                HorizontalContentAlignment="Stretch"
+                                CanUserReorderColumns="False"
+                                HeadersVisibility="Column"
+                                AutoGenerateColumns="False"
+                                RowHeight="40"
+                                ColumnHeaderHeight="40"
+                                ItemsSource="{Binding GagerClient, Mode=OneWay}">
+                                <interactivity:Interaction.Behaviors>
+                                    <interactions:EventTriggerBehavior>
+                                        <interactions:NavigateToPageAction>
+                                            <interactions:NavigateToPageAction.Parameter>
+                                                <local:NavParams VMT="GagerApp.Manager.Dummy.DummyNewPaartnerDialogViewModel" VMP="{x:Null}"/>
+                                            </interactions:NavigateToPageAction.Parameter>
+                                        </interactions:NavigateToPageAction>
+                                    </interactions:EventTriggerBehavior>
+                                </interactivity:Interaction.Behaviors>
+                                <controls:DataGrid.Columns>
+                                    <controls:DataGridTextColumn Header="Фамилия" MinWidth="150" Binding="{Binding Path=SurnameClient, Mode=OneWay}"/>
+                                    <controls:DataGridTextColumn Header="Имя" MinWidth="150"  Binding="{Binding Path=NameClient, Mode=OneWay}"/>
+                                    <controls:DataGridTextColumn Header="Отчество" MinWidth="150" Binding="{Binding Path=PaternumClient, Mode=OneWay}" />
+                                    <controls:DataGridTemplateColumn CanUserResize="False" Width="40" IsReadOnly="True">
+                                        <controls:DataGridTemplateColumn.CellTemplate>
+                                            <DataTemplate>
+                                                <Button Style="{ThemeResource TextBlockButtonStyle}">
+                                                    <FontIcon FontSize="20" Glyph="&#xE106;" />
+                                                </Button>
+                                            </DataTemplate>
+                                        </controls:DataGridTemplateColumn.CellTemplate>
+                                    </controls:DataGridTemplateColumn>
+                                </controls:DataGrid.Columns>
+                            </controls:DataGrid>
+                            <Button
+                                Style="{ThemeResource TextBlockButtonStyle}"
+                                HorizontalContentAlignment="Stretch"
+                                >
+                                <StackPanel
+                                    Orientation="Horizontal"
+                                    Spacing="8"
+                                    >
+                                    <FontIcon FontSize="20" Glyph="&#xE109;" />
+                                    <TextBlock Text="Добавить"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </PivotItem>
+                </Pivot>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</local:BasePage>
